@@ -80,6 +80,9 @@ export default {
   justify-content: space-between;
 
   &__logo {
+    img {
+      width: 80px;
+    }
   }
 
   &__menu {
