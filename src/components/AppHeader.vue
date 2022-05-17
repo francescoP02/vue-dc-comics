@@ -92,12 +92,12 @@ export default {
     li {
       margin: 0.5rem;
       padding: 0.5rem;
-      color: $nav-element;
+      color: $black;
       line-height: 50px;
 
       &.active {
-        color: $active-nav-element;
-        border-bottom: 5px solid $active-nav-element;
+        color: $blue;
+        border-bottom: 5px solid $blue;
       }
     }
   }

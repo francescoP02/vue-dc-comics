@@ -9,8 +9,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/common.scss";
+@import "../style/variables.scss";
 .shop {
-  background-color: #0282f9;
-  height: 150px;
+  background-color: $blue;
+  height: 200px;
 }
 </style>

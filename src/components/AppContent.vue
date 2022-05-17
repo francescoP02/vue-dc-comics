@@ -11,9 +11,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/common.scss";
+@import "../style/variables.scss";
 .content {
-  background-color: black;
-  height: 150px;
+  background-color: $black;
+  height: 200px;
   display: flex;
 
   span {
