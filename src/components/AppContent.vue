@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <span> --> Content goes here </span>
+    <span> &ndash;&ndash;&gt; Content goes here &lt;&ndash;&ndash; </span>
   </div>
 </template>
 

@@ -35,8 +35,8 @@
       <button>SIGN-UP NOW!</button>
       <div class="social">
         <span class="follow-us">FOLLOW US</span>
-        <span class="social-icon" v-for="(item , index) in contacts" :key="index">
-         <img src="require(`../assets/${`item.name}` `)" alt="">
+        <span class="social-icon" v-for="(item,index) in socials" :key="index">
+            <img :src="require(`../assets/img/${item.img}`)" alt="">
         </span>
       </div>
     </div>
@@ -131,21 +131,21 @@ export default {
           name: "DC Power Visa",
         },
       ],
-      contacts: [
+      socials: [
         {
-          name: "footer-facebook.png",
+          img: "footer-facebook.png",
         },
         {
-          name: "footer-twitter.png",
+          img: "footer-twitter.png",
         },
         {
-          name: "footer-youtube.png",
+          img: "footer-youtube.png",
         },
         {
-          name: "footer-periscope.png",
+          img: "footer-pinterest.png",
         },
         {
-          name: "footer-pinterest.png",
+          img: "footer-periscope.png",
         },
       ]
     };
@@ -211,15 +211,20 @@ export default {
 
     .follow-us {
       color: $blue;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600;
       display: inline-block;
+      padding: 1rem;
     }
 
     .social-icon {
         color: white;
         display: inline-block;
-        width: 20px;
+        width: 30px;
+        margin: .5rem;
+        img{
+            width: 100%;
+        }
     }
   }
 }
