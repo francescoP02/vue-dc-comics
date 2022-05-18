@@ -1,15 +1,23 @@
 <template>
   <div id="app">
-    <AppHeader />
-    <AppContent />
-    <AppShop />
-    <AppFooter />
+    <header>
+      <AppHeader />
+    </header>
+
+    <main>
+      <ComicList />
+      <AppShop />
+    </main>
+
+    <footer>
+      <AppFooter />
+    </footer>
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppContent from "./components/AppContent.vue";
+import ComicList from "./components/ComicList.vue";
 import AppShop from "./components/AppShop.vue";
 import AppFooter from "./components/AppFooter.vue";
 
@@ -17,7 +25,7 @@ export default {
   name: "App",
   components: {
     AppHeader,
-    AppContent,
+    ComicList,
     AppShop,
     AppFooter,
   },
