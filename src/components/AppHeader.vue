@@ -76,7 +76,7 @@ export default {
 .header {
   display: flex;
   flex-direction: row;
-  height: 100px;
+  height: 80px;
   justify-content: space-between;
 
   &__logo {

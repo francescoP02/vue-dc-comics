@@ -1,5 +1,7 @@
 <template>
   <section class="comics">
+    <div class="jumbotron">
+    </div>
     <div class="container">
       <div class="comics__list">
         <AppContent
@@ -107,6 +109,14 @@ export default {
 
 .comics {
     background-color: #1c1c1c;
+
+    .jumbotron {
+        height: 250px;
+        background-image: url(../assets/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     &__list {
     display: flex;
     flex-wrap: wrap;
